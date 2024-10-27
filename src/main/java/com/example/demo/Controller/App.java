@@ -10,7 +10,7 @@ public class App {
 
     @GetMapping("/test")
     public String getTest() {
-        return "index";
+        return "applicant";
     }
     
     
