@@ -17,7 +17,7 @@ public class App {
     }
     
     @PostMapping("/applay")
-    public String getMethodName(@RequestParam String param) {
+    public String getMethodName(String username ,String password ) {
         return "applicant";
     }
     
