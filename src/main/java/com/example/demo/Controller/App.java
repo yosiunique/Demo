@@ -20,10 +20,7 @@ public class App {
     public String getMethodName(String username ,String password ) {
         return "welcom";
     }
-    @GetMapping("/")
-    public String getWelcomPage(){
-        return "welcom";
-    }
+  
     
     
 }
