@@ -18,7 +18,11 @@ public class App {
     
     @PostMapping("/applay")
     public String getMethodName(String username ,String password ) {
-        return "applicant";
+        return "redirect:/welcom.html";
+    }
+    @GetMapping("/")
+    public String getWelcomPage(){
+        return "welcom";
     }
     
     
