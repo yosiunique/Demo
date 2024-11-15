@@ -3,22 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome to My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+.welcome-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin: 0 0 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.content h1 span {
+    color: #ff6347; /* Tomato color for accent */
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+button#explore-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#explore-button:hover {
+    background-color: #e55342;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+</style>
+
 </head>
 <body>
-    
-
-    <H1>welcom to josi protofolio websit  you will see the greate and smart things in the near futur.
-    </H1>
-
-
+    <div class="welcome-container">
+        <div class="background-overlay"></div>
+        <div class="content">
+            <h1>Welcome to <span>Yoseph's Portfolio</span></h1>
+            <p>Explore my projects, skills, and journey in the world of technology.</p>
+            <button id="explore-button">Explore</button>
+        </div>
+    </div>
 
     <script>
 
-alert("እንኳን በደህና ወደ Josi Protofolio በደህና መጡ")
+
+
+
+// script.js
+document.getElementById('explore-button').addEventListener('click', () => {
+    window.location.href = 'portfolio.html'; // Replace with your portfolio page
+});
+
+
+
+
 
     </script>
-
-
 </body>
 </html>
